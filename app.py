@@ -8,6 +8,8 @@ import plotly.graph_objects as go
 # Create a Dash app
 app = dash.Dash(__name__)
 
+server = app.server #Required for Render deployment
+
 # Initial dataset
 datasets = {
     "dataset1": {'categories': ['A', 'B', 'C', 'D'], 'values': [10, 15, 7, 12]},
